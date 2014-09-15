@@ -1,4 +1,4 @@
-ico-validator[![Build Status](https://travis-ci.org/ucetnictvi-on-line/ico-validator.svg?branch=master)](https://travis-ci.org/ucetnictvi-on-line/ico-validator)
+ico-validator[![Build Status](https://travis-ci.org/ucetnictvi-on-line/ico-validator.svg?branch=master)](https://travis-ci.org/ucetnictvi-on-line/ico-validator) [![Code Climate](https://codeclimate.com/github/ucetnictvi-on-line/ico-validator/badges/gpa.svg)](https://codeclimate.com/github/ucetnictvi-on-line/ico-validator)
 =============
 
 Rails validator for format of [Czech company identification number - ICO](http://cs.wikipedia.org/wiki/Identifika%C4%8Dn%C3%AD_%C4%8D%C3%ADslo_osoby)
