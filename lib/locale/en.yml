@@ -1,4 +1,4 @@
 en:
   errors:
-      messages:
-        invalid_format: "Invalid ICO format."
+    messages:
+      invalid_format: "Invalid ICO format."

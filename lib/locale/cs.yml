@@ -1,4 +1,4 @@
-en:
+cs:
   errors:
-      messages:
-        invalid_format: "Neplatný formát IČO."
+    messages:
+      invalid_format: "Neplatný formát IČO."
