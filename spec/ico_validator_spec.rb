@@ -9,10 +9,12 @@ end
 describe IcoValidator do
   subject { Validatable.new }
 
-  it 'ICO is valid with string value in right format' do
-    subject.ico = '61499609'
+  ['61499609', '25275500', '29233011'].each do |valid_ico|
+    it "ICO #{valid_ico} is valid" do
+      subject.ico = valid_ico
 
-    expect(subject).to be_valid
+      expect(subject).to be_valid
+    end
   end
 
   it "ICO is valid with integer value in right format" do
