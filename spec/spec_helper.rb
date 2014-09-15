@@ -1,3 +1,3 @@
 require "codeclimate-test-reporter"
 CodeClimate::TestReporter.start
-require 'ico_validator'
+require 'ico-validator'
