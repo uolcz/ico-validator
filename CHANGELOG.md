@@ -1,3 +1,7 @@
+## v0.1.1
+
+* Changed the dependency on activemodel so the gem can be used in Rails 4.1+
+
 ## v0.1.0
 
 * Fixed file names so IcoValidator can be automatically loaded by bundler
