@@ -3,4 +3,6 @@ rvm:
   - 2.1.1
   - 2.0.0
   - 1.9.3
-script: bundle exec rspec
+script:
+  - bundle exec rspec
+  - bundle exec rake jasmine:ci

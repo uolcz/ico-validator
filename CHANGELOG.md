@@ -1,3 +1,7 @@
+## v0.1.2
+
+* Added JS validator
+
 ## v0.1.1
 
 * Changed the dependency on activemodel so the gem can be used in Rails 4.1+
