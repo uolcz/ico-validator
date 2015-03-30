@@ -14,6 +14,17 @@ validates :ico,
 
 ```
 
+### JS validation
+```js
+application.js
+//= require ico-validator
+```
+```ruby
+<%= form_for(...) do |f| %>
+  <%= f.text_field :ico, class: 'ico-validate' %>
+<% end %>
+```
+
 ### What is validated
 
 * ICO length - must be exactly 8 characters

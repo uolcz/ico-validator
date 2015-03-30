@@ -1,4 +1,4 @@
 module IcoValidation
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
   end
 end
