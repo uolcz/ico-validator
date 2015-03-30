@@ -1,0 +1,5 @@
+src_files:
+  - 'app/assets/javascripts/*.js'
+
+spec_files:
+  - '**/*[sS]pec.js'
