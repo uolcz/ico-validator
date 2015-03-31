@@ -26,7 +26,7 @@ jQuery( function($) {
 
   function validate(el) {
     var value = $(el).val();
-    if( ico_validator.valid_ico(value) ) {
+    if( value.length <= 0 || ico_validator.valid_ico(value) ) {
       $(el).parent().removeClass('field_with_errors').removeClass('error');
     } else {
       $(el).parent().addClass('field_with_errors').addClass('error');
