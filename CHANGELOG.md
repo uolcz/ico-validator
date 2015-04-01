@@ -1,3 +1,7 @@
+## v0.2.1
+
+* Allow blank ICO fields
+
 ## v0.2.0
 
 * Added JS validator
