@@ -7,3 +7,6 @@ rvm:
 script:
   - bundle exec rspec
   - bundle exec rake jasmine:ci
+addons:
+  code_climate:
+    repo_token: eebc129fa878929ebbf8f1097a518df71c73bf316dc0ae59eec048f4e3d4fdd6
