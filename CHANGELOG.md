@@ -1,3 +1,7 @@
+## v0.2.2
+
+* Live validate (for dynamic forms)
+
 ## v0.2.1
 
 * Allow blank ICO fields
