@@ -38,6 +38,3 @@ application.js
 * ICO must contain only numbers
 * ICO number must satisfy [last digit control formula ](http://www.cssz.cz/cz/e-podani/pro-vyvojare/definice-druhu-e-podani/p-o/logicke-testy-datove-vety.htm)
 
-## TODO
-
-* Add JS validation for ICO fields
