@@ -41,6 +41,14 @@ jQuery( function($) {
     validate(this);
   });
 
+  $(document).on('paste', icoFields, function() {
+    var el = this;
+    setTimeout( function() {
+      validate(el);
+      $(el).trigger('change');
+    }, 10);
+  });
+
   $(document).on('submit', 'form', function(e) {
     var wrong = $(this).find('.field_with_errors .ico-validate');
     if( wrong.length <= 0 ) {

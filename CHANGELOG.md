@@ -1,4 +1,8 @@
-## v0.2.2
+## v0.3.1
+
+* Fire 'change' event on paste ico from clipboard and validate
+
+## v0.3.0
 
 * Live validate (for dynamic forms)
 
