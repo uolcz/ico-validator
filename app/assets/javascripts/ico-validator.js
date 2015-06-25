@@ -22,7 +22,7 @@ var ico_validator = {
 };
 
 jQuery( function($) {
-  var ico_fields = $('.ico-validate');
+  var icoFields = '.ico-validate';
 
   function validate(el) {
     var value = $(el).val();
@@ -33,20 +33,23 @@ jQuery( function($) {
     }
   }
 
-  ico_fields.on('change', function() {
+  $(document).on('change', icoFields, function() {
     validate(this);
   });
 
-  ico_fields.on('keyup', function() {
+  $(document).on('keyup', icoFields, function() {
     validate(this);
   });
 
-  ico_fields.closest('form').on('submit', function() {
+  $(document).on('submit', 'form', function(e) {
     var wrong = $(this).find('.field_with_errors .ico-validate');
     if( wrong.length <= 0 ) {
       return;
     }
     wrong.focus();
+    e.stopPropagation();
+    e.preventDefault();
+    e.stopImmediatePropagation();
     return false;
   });
 });
