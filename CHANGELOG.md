@@ -1,3 +1,7 @@
+## v0.4.0
+
+* Validator may be used without Rails
+
 ## v0.3.1
 
 * Fire 'change' event on paste ico from clipboard and validate
