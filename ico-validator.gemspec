@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = 'ico-validator'
-  spec.version       = '0.3.1'
+  spec.version       = '0.4.0'
   spec.authors       = ['Premysl Donat']
   spec.email         = ['donat@uol.cz']
   spec.summary       = %q{Rails validator for validating format of czech identification number = IC}

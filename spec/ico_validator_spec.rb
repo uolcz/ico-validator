@@ -17,7 +17,7 @@ describe IcoValidator do
     end
   end
 
-  it "ICO is valid with integer value in right format" do
+  it 'ICO is valid with integer value in right format' do
     subject.ico = 61499609
 
     expect(subject).to be_valid
@@ -27,7 +27,7 @@ describe IcoValidator do
     it "ICO is invalid with value #{invalid_ico.inspect}" do
       subject.ico = invalid_ico
       expect(subject).not_to be_valid
-      expect(subject.errors.messages).to eq({ico: ["Invalid ICO format."]})
+      expect(subject.errors.messages).to eq({ ico: ['Invalid ICO format.'] })
     end
   end
 end
