@@ -42,8 +42,7 @@ Rails validator is implemented as [ActiveModel::EachValidator](http://api.rubyon
 
 ```ruby
 class Company < ActiveRecord::Base
-  validates :ico,
-    ico: true
+  validates :ico, ico: true
 end
 ```
 If validation doesn't pass it adds `:invalid_format` error on validated attribute.
