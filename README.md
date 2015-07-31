@@ -55,7 +55,7 @@ ico-validator is Rails engine, so if you want to validate ico with javascript ju
 ```
 
 And then on any field you want to be validated with JS:
-```ruby
+```erb
 <%= form_for(...) do |f| %>
   <%= f.text_field :ico, class: 'ico-validate' %>
 <% end %>
