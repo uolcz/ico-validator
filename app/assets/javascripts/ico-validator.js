@@ -3,7 +3,7 @@ var ico_validator = {
     return value.length === 8 && value.match(/^\d+$/) && ico_validator.last_number_valid(value);
   },
   last_number_valid: function(value) {
-    return parseInt(value[7], 10) === ico_validator.calculate_valid_last_number(value);
+    return parseInt(value[value.length - 1], 10) === ico_validator.calculate_valid_last_number(value);
   },
   calculate_valid_last_number: function(value) {
     var sum = 0;
