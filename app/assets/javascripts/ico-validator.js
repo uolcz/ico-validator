@@ -16,7 +16,7 @@ var ico_validator = {
         $newValue = '0' + $newValue;
         i++;
       }
-      $newValue.length === 8 && $newValue.match(/^\d+$/) && ico_validator.last_number_valid($newValue);
+      return $newValue.length === 8 && $newValue.match(/^\d+$/) && ico_validator.last_number_valid($newValue);
     }
   },
   last_number_valid: function(value) {
