@@ -1,6 +1,5 @@
 var ico_validator = {
   valid_ico: function(value) {
-    console.log('forked ico');
     var $newValue,
         $remainingDigits,
         i,
@@ -17,7 +16,7 @@ var ico_validator = {
         $newValue = '0' + $newValue;
         i++;
       }
-      console.log($newValue.length === 8 && $newValue.match(/^\d+$/) && ico_validator.last_number_valid($newValue));
+
       return $newValue.length === 8 && $newValue.match(/^\d+$/) && ico_validator.last_number_valid($newValue);
     }
   },
