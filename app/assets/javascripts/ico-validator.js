@@ -1,4 +1,4 @@
-var ico_validator = {
+var icoValidator = {
   validIco: function(value) {
     var $newValue,
         $remainingDigits,
@@ -6,7 +6,7 @@ var ico_validator = {
         j;
 
     if (value.length === 8) {
-      return value.match(/^\d+$/) && ico_validator.lastNumberValid(value);
+      return value.match(/^\d+$/) && icoValidator.lastNumberValid(value);
     } else {
       $remainingDigits = 8 - value.length;
       $newValue = value;
@@ -17,11 +17,11 @@ var ico_validator = {
         i++;
       }
 
-      return $newValue.length === 8 && $newValue.match(/^\d+$/) && ico_validator.lastNumberValid($newValue);
+      return $newValue.length === 8 && $newValue.match(/^\d+$/) && icoValidator.lastNumberValid($newValue);
     }
   },
   lastNumberValid: function(value) {
-    return parseInt(value[value.length - 1], 10) === ico_validator.calculateValidLastNumber(value);
+    return parseInt(value[value.length - 1], 10) === icoValidator.calculateValidLastNumber(value);
   },
   calculateValidLastNumber: function(value) {
     var sum = 0;
@@ -44,7 +44,7 @@ jQuery( function($) {
 
   function validate(el) {
     var value = $(el).val();
-    if( value.length <= 0 || ico_validator.validIco(value) ) {
+    if( value.length <= 0 || icoValidator.validIco(value) ) {
       $(el).parent().removeClass('field_with_errors').removeClass('error');
     } else {
       $(el).parent().addClass('field_with_errors').addClass('error');
