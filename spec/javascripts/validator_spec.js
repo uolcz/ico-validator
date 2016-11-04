@@ -10,9 +10,9 @@ describe('ICO validator', function() {
   icoList = [null, '', '1', 123, '1111111X', '00000000', '614996097', '123456789'];
   for( i in icoList ) {
     if( icoList.hasOwnProperty(i) ) {
-      ico_invalid = icoList[i];
-      it('ICO is invalid with value ' + ico_invalid, function() {
-        expect(icoValidator.validIco(ico_invalid)).toBeFalsy();
+      icoInvalid = icoList[i];
+      it('ICO is invalid with value ' + icoInvalid, function() {
+        expect(icoValidator.validIco(icoInvalid)).toBeFalsy();
       });
     }
   }
