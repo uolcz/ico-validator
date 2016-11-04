@@ -2,9 +2,9 @@ describe("ICO validator", function() {
   var ico_list, i;
   ico_list = ['61499609', '25275500', '29233011'];
   for( i in ico_list ) if( ico_list.hasOwnProperty(i) ) {
-    ico_valid = ico_list[i];
-    it("ICO " + ico_valid + " is valid", function() {
-      expect(icoValidator.validIco(ico_valid)).toBeTruthy();
+    icoValid = ico_list[i];
+    it("ICO " + icoValid + " is valid", function() {
+      expect(icoValidator.validIco(icoValid)).toBeTruthy();
     });
   }
   ico_list = [null, '', '1', 123, '1111111X', '00000000', '614996097', '123456789'];
